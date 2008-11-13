@@ -1,0 +1,18 @@
+<h1>Edit Asset</h1>
+ 
+<%= form_for(@asset, :action => resource(@asset) ) do %>
+  <p>
+    <%= text_field :title, :label => "Title" %>
+  </p>
+
+  <p>
+    <%= text_field :content, :label => "Content" %>
+  </p>
+
+  <p>
+    <%= submit "Edit" %>
+  </p>
+<% end =%>
+ 
+<%= link_to 'Back', resource(:assets) %>
+
