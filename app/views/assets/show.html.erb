@@ -2,9 +2,9 @@
  
 <h3><%=h @asset.title %></h3>
  
-<p>
-  <%=h @asset.content %>
-</p>
+<pre id="content" class="markdown">
+<%=h @asset.content %>
+</pre>
  
 <%= link_to 'Back', resource(:assets) %>
 
